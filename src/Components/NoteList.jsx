@@ -69,3 +69,4 @@ const NoteItem = ({ note, onDelete, onToggle }) => {
     </div>
   );
 };
+

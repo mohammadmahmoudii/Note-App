@@ -1,9 +1,18 @@
+import Message from "./Message";
+
 const NoteStatus = ({notes}) => {
     const AllNotes=notes.length;
     const complited=notes.filter(n=>n.iscomplited).length;
     const unComplited=AllNotes-complited;
 
-    if(AllNotes==0) return <h2>No Noots Alredy has been Added</h2>
+    if(AllNotes==0){ 
+        
+        return (
+        <Message>
+            <h2>No Noots Alredy has been Added</h2>
+        </Message>
+        )
+    } 
     return ( 
         <ul className="note-status">
         <li>
