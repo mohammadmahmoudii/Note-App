@@ -101,3 +101,29 @@ justify-content: space-evenly;
 {
     color: var(--text-700);
 }
+.note-item.complited
+{
+    opacity: 80%;
+}
+.note-item.complited .title{
+    text-decoration: line-through;
+}
+
+.note-status
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-400);
+  margin-bottom: 2rem;
+  
+}
+.note-status span {
+    border-radius: 2rem;
+    display: inline-block;
+    background-color: var(--text-400);
+    padding: 0.2rem 0.3rem;
+    font-size: 0.75rem;
+    color: var(--text-100);
+  }
+  
